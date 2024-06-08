@@ -3,5 +3,13 @@
     <style name="Base.Theme.Wastify" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your dark theme here. -->
         <item name="colorPrimary">@color/darkgreen</item>
+        <item name="colorPrimaryVariant">@color/darkgreen</item>
+        <item name="colorOnPrimary">@color/green</item>
+    </style>
+
+    <style name="Theme.Wastify" parent="Base.Theme.Wastify" />
+
+    <style name="App.Custom.Indicator" parent="Widget.Material3.BottomNavigationView.ActiveIndicator" >
+        <item name="color">@color/palegreen</item>
     </style>
 </resources>

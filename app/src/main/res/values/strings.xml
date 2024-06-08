@@ -23,4 +23,87 @@
     <string name="location">Location</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="pilih_cara_biar_tau_sampahmu">Pilih Cara \nBiar Tau Sampahmu</string>
+    <string name="analisis">Analisis Foto</string>
+    <string name="preview">Preview</string>
+    <string name="panduan_foto">Panduan Foto</string>
+    <string name="perhatikan_background">Perhatikan Background!</string>
+    <string name="description_panduan">Pastikan sampah berada di background\nyang bersih dan kontras ya.</string>
+    <string name="sampah_anda_terbuat_dari_bahan">Sampah anda terbuat dari bahan</string>
+    <string name="hasil">Hasil</string>
+    <string name="bahan">Bahan</string>
+    <string name="rekomendasi_penanganan">Rekomendasi Penanganan</string>
+    <string name="penanganan">Penanganan</string>
+    <string name="description">deskripsi</string>
+    <string name="news_name">News</string>
+    <string name="location_name">Lokasi</string>
+    <string name="database_name">Sampah</string>
+    <string name="poin_kamu">Poin Kamu :</string>
+    <string name="nama_pemenang">Nama Pemenang</string>
+    <string name="poin">poin</string>
+    <string name="person_s_name">Person\'s Name</string>
+    <string name="id_user">ID User</string>
+    <string name="ubah_password">Ubah Password</string>
+    <string name="log_out">Log Out</string>
+
+    <string-array name="data_name">
+        <item>News 1</item>
+        <item>News 2</item>
+        <item>News 3</item>
+        <item>News 4</item>
+        <item>News 5</item>
+    </string-array>
+    <string-array name="data_publisher">
+        <item>Publisher 1</item>
+        <item>Publisher 2</item>
+        <item>Publisher 3</item>
+        <item>Publisher 4</item>
+        <item>Publisher 5</item>
+    </string-array>
+    <integer-array name="data_photo">
+        <item>@drawable/trash_1</item>
+        <item>@drawable/trash_2</item>
+        <item>@drawable/trash_3</item>
+        <item>@drawable/trash_4</item>
+        <item>@drawable/trash_5</item>
+    </integer-array>
+
+    <string-array name="data_location">
+        <item>Wastify Medan</item>
+        <item>Wastify Jakarta</item>
+        <item>Wastify Bandung</item>
+    </string-array>
+
+    <string-array name="data_location_description">
+        <item>Jalan Ahmad Yani Nomor 8</item>
+        <item>Jalan Gatot Subroto Nomo 3A</item>
+        <item>Jalan Letjend. Katamso Nomor 1</item>
+    </string-array>
+
+    <string-array name="data_sampah_name">
+        <item>Sampah 1</item>
+        <item>Sampah 2</item>
+        <item>Sampah 3</item>
+        <item>Sampah 4</item>
+        <item>Sampah 5</item>
+        <item>Sampah 6</item>
+    </string-array>
+
+    <string-array name="data_sampah_description">
+        <item>Masih bisa dipakai</item>
+        <item>Recycle</item>
+        <item>Reuse</item>
+        <item>Reuse</item>
+        <item>Recycle</item>
+        <item>Masih bisa dipakai</item>
+    </string-array>
+
+    <integer-array name="data_sampah_photo">
+        <item>@drawable/plastic_photo</item>
+        <item>@drawable/plastic_photo_2</item>
+        <item>@drawable/plastic_photo_3</item>
+        <item>@drawable/plastic_photo_4</item>
+        <item>@drawable/plastic_photo_5</item>
+        <item>@drawable/plastic_photo_6</item>
+    </integer-array>
 </resources>

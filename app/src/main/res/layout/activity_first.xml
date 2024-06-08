@@ -5,32 +5,33 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.FirstActivity"
+    tools:context=".ui.activity.FirstActivity"
     android:background="@color/darkgreen">
 
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="80dp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintBottom_toBottomOf="@id/wastify_button"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/banner1" />
 
     <Button
         android:id="@+id/wastify_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/loginwithwastify"
+        android:layout_marginBottom="124dp"
         android:backgroundTint="@color/green"
+        android:drawableLeft="@drawable/account_wastify"
+        android:fontFamily="@font/montserratsemibold"
+        android:text="@string/loginwithwastify"
         android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.838" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/google_button"
@@ -38,11 +39,12 @@
         android:layout_height="wrap_content"
         android:backgroundTint="@color/white"
         android:text="@string/loginwithgoogle"
+        android:fontFamily="@font/montserratsemibold"
         android:textColor="@color/black"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="6dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/wastify_button"
-        app:layout_constraintVertical_bias="0.241" />
+        android:drawableLeft="@drawable/account_google"
+         />
 </androidx.constraintlayout.widget.ConstraintLayout>

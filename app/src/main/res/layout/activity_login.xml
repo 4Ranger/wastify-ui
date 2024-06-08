@@ -5,23 +5,19 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.LoginActivity">
+    tools:context=".ui.activity.LoginActivity"
+    android:background="@color/white">
 
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="50dp"
-        android:layout_marginEnd="32dp"
-        android:layout_marginBottom="475dp"
-        android:paddingTop="15dp"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintVertical_bias="0.077"
         app:srcCompat="@drawable/logo_transparent" />
 
     <TextView
@@ -159,31 +155,30 @@
         android:id="@+id/belumPunyaAkunEditText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="88dp"
         android:layout_marginBottom="75dp"
         android:text="@string/belum_punya_akun"
         android:textSize="12sp"
-        android:layout_marginStart="50dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.391"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/loginButton"
-        app:layout_constraintVertical_bias="0.54" />
+        app:layout_constraintTop_toBottomOf="@+id/loginButton" />
 
     <Button
         android:id="@+id/registerButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="75dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="88dp"
+        android:layout_marginBottom="75dp"
         android:backgroundTint="@color/white"
         android:text="@string/daftar_disini"
         android:textColor="@color/black"
         android:textSize="12sp"
-        android:layout_marginTop="0dp"
-        android:layout_marginStart="50dp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/belumPunyaAkunEditText"
-        app:layout_constraintTop_toBottomOf="@id/loginButton" />
+        app:layout_constraintTop_toBottomOf="@+id/loginButton"
+        />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

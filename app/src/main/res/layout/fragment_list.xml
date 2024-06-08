@@ -4,22 +4,131 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.ui.list.ListFragment">
+    tools:context=".ui.fragment.list.ListFragment"
+    android:background="@color/white">
 
-
-    <TextView
-        android:id="@+id/text_list"
-        android:layout_width="match_parent"
+    <ImageView
+        android:id="@+id/ivFirstPlace"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:textAlignment="center"
-        android:textSize="20sp"
-        android:text="This is list fragment"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="88dp"
+        android:src="@drawable/first_place"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivSecondPlace"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/second_place"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivFirstPlace" />
+
+    <TextView
+        android:id="@+id/poinTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/poin_kamu"
+        android:fontFamily="@font/montserratmedium"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="44dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivThirdPlace"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/third_place"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivSecondPlace" />
+
+    <TextView
+        android:id="@+id/firstPlaceName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:layout_marginStart="24dp"
+        android:text="@string/nama_pemenang"
+        android:fontFamily="@font/montserratbold"
+        app:layout_constraintBottom_toBottomOf="@+id/ivFirstPlace"
+        app:layout_constraintStart_toEndOf="@+id/ivFirstPlace"
+        app:layout_constraintTop_toTopOf="@+id/ivFirstPlace" />
+
+    <TextView
+        android:id="@+id/firstPlacePoint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="44dp"
+        android:text="@string/poin"
+        android:fontFamily="@font/montserratmedium"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/firstPlaceName" />
+
+    <TextView
+        android:id="@+id/secondPlaceName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserratbold"
+        android:layout_marginBottom="4dp"
+        android:layout_marginStart="24dp"
+        android:text="@string/nama_pemenang"
+        app:layout_constraintBottom_toBottomOf="@+id/ivSecondPlace"
+        app:layout_constraintStart_toEndOf="@+id/ivSecondPlace"
+        app:layout_constraintTop_toTopOf="@+id/ivSecondPlace" />
+
+    <TextView
+        android:id="@+id/secondPlacePoint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserratmedium"
+        android:layout_marginEnd="44dp"
+        android:text="@string/poin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/secondPlaceName" />
+
+    <TextView
+        android:id="@+id/thirdPlaceName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserratbold"
+        android:layout_marginBottom="4dp"
+        android:layout_marginStart="24dp"
+        android:text="@string/nama_pemenang"
+        app:layout_constraintBottom_toBottomOf="@+id/ivThirdPlace"
+        app:layout_constraintStart_toEndOf="@+id/ivThirdPlace"
+        app:layout_constraintTop_toTopOf="@+id/ivThirdPlace" />
+
+    <TextView
+        android:id="@+id/thirdPlacePoint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserratmedium"
+        android:layout_marginEnd="44dp"
+        android:text="@string/poin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/thirdPlaceName" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="259dp"
+        app:layout_constraintTop_toBottomOf="@id/thirdPlaceName" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_leaderboard"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline2"
+        app:layout_constraintBottom_toBottomOf="parent"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
